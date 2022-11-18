@@ -1,0 +1,46 @@
+:root {
+  --main-blue: #0067ba;
+  --main-yellow: #fbbd55;
+  --main-white: #fcfcfc;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-white);
+}
+.navbar{
+    background-color: var(--main-blue);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.toggler-icon {
+  font-size: 2rem;
+  color: #000;
+}
+a.navbar-brand {
+  font-weight: 800;
+}
+.main-container {
+  position: relative;
+  background-color: var(--main-blue);
+  height: 286px;
+}
+.main-image-dog {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+.main-title{
+    color: var(--main-white);
+    margin: 0 3vw;
+    z-index: 0;
+}
+.main-button {
+  border-radius: 30px;
+  background-color: var(--main-yellow);
+}
