@@ -34,73 +34,96 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <section class="colored-section" id="title">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          >Save <br />
-          Dogs</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="fa-solid fa-paw toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Animais</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Como adotar</a>
-            </li>
-          </ul>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#"
+            >Save <br />
+            Dogs</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa-solid fa-paw toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Animais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Como adotar</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">Adote um amigo.</h1>
+            <h1 class="sub-heading">Salve vidas.</h1>
+            <button type="button" class="btn btn-warning btn-lg pets-button">
+              <i class="fa-solid fa-paw"></i> Pets disponíveis
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-warning btn-lg adopt-button"
+            >
+              Quero adotar!
+            </button>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              class="title-image"
+              src="assets/images/main-image-dog.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-    </nav>
-    <div class="row align-items-center main-container">
-      <div class="col main-title">
-        <h1>Adote um amigo.</h1>
-        <a href=""
-          ><button type="button" class="btn btn-primary main-button">
-            Pets para adoção
-          </button></a
-        >
+    </section>
+
+    <!-- Partners -->
+    <section>
+      <div class="row partners">
+        <div class="col">
+          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+        </div>
+        <div class="col">
+          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+        </div>
+        <div class="col">
+          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+        </div>
+        <div class="col">
+          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+        </div>
       </div>
-      <div class="col">
-        <img
-          class="main-image-dog"
-          src="./assets/images/main-image-dog.png"
-          alt=""
-        />
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="white-section" id="footer">
+      <div class="container-fluid">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p>© Copyright 2022 Eduardo Cardoso</p>
       </div>
-    </div>
-    <div class="row partners">
-      <div class="col ">
-        <img src="./assets/images/Bayer-Logo.wine.svg" alt="">
-        </img>
-      </div>
-      <div class="col">
-        <img src="./assets/images/Bayer-Logo.wine.svg" alt="">
-        </img>
-      </div>
-      <div class="col">
-        <img src="./assets/images/Bayer-Logo.wine.svg" alt="">
-        </img>
-      </div>
-      <div class="col">
-        <img src="./assets/images/Bayer-Logo.wine.svg" alt="">
-        </img>
-      </div> 
-    </div>
+    </footer>
     <script src="/assets/js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
