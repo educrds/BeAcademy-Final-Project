@@ -7,8 +7,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-white);
 }
-.navbar{
-    background-color: var(--main-blue);
+
+.navbar {
+  background-color: var(--main-blue);
 }
 .navbar-toggler {
   border: none;
@@ -18,29 +19,50 @@ body {
 }
 .toggler-icon {
   font-size: 2rem;
-  color: #000;
+  color: var(--main-white);
 }
-a.navbar-brand {
+.navbar-collapse {
+  text-align: end;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--main-white);
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--main-white);
   font-weight: 800;
+}
+.navbar .navbar-brand {
+  color: var(--main-white);
+  font-weight: 800;
+  line-height: 1;
 }
 .main-container {
   position: relative;
   background-color: var(--main-blue);
-  height: 286px;
+  height: 256px;
 }
 .main-image-dog {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: -1;
-
+  max-width: 60%;
 }
-.main-title{
-    color: var(--main-white);
-    margin: 0 3vw;
-    z-index: 0;
+.main-title {
+  margin: 0 3vw;
+  z-index: 0;
+}
+.main-title h1 {
+  color: var(--main-white);
+  font-weight: 700;
 }
 .main-button {
   border-radius: 30px;
   background-color: var(--main-yellow);
+}
+.partners .col {
+  text-align: center;
+  justify-content: center;
+}
+.partners img {
+  width: 80px;
 }
