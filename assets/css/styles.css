@@ -4,24 +4,29 @@
   --main-white: #fcfcfc;
   --gray: #d5d5d5;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-white);
 }
 
 h1,
-h2,
-h3,
 h4,
-h5,
-h6 {
+h5 {
   font-weight: 700;
 }
-
 p {
   color: #8f8f8f;
 }
-
+section {
+  margin-bottom: 4vh;
+}
+ol li {
+  padding: 1vh 0;
+}
 /* Headings */
 
 .big-heading,
@@ -33,8 +38,10 @@ p {
 
 /* Partners */
 
+/* .partners {
+  margin: 1vh 0;
+} */
 .partners .col {
-  margin: 3vh 0;
   text-align: center;
   justify-content: center;
 }
@@ -80,10 +87,10 @@ p {
 #title {
   background-color: var(--main-blue);
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
-#title .container-fluid {
+#title .container {
   padding: 2vh 15vw 0;
 }
 
@@ -91,30 +98,96 @@ p {
 
 .title-image {
   width: 100%;
+  /* max-width: 800px; */
   /* transform: rotate(25deg); */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
-  right: 0;
+  /* right: 0; */
   /* right: 30%; */
 }
 
-/* Features Section */
+/* Card */
+.card {
+  margin: 0.5vh 0;
+}
+.card img {
+  height: 150px;
+  width: 100%;
+}
 
-/* CTA Section */
+/* Animais Section */
+
+.titles {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: var(--main-blue);
+}
+
+/* Como Adotar Section */
+
+/* Tabela Vacina Section */
+.table th {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+}
+.table td {
+  vertical-align: middle;
+}
+
+/* Contato Section */
+
+.contact-container {
+  margin-bottom: 2.5vh;
+}
+.btn-enviar {
+  text-align: center;
+}
+.btn-primary {
+  background-color: var(--main-blue);
+  border: none;
+  width: 150px;
+}
 
 /* Footer Section */
 
-.social-icon {
-  margin: 20px 10px;
+#footer {
+  text-align: center;
+  background-color: var(--main-blue);
+}
+#footer p {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 1vh 0;
+  color: var(--gray);
 }
 
-@media (max-width: 1028px) {
-  #title {
-    text-align: center;
-  }
+.social-icon {
+  font-size: 1.3rem;
+  color: var(--gray);
+  margin: 3vh 4vw 0;
+}
 
+/* @media (max-width: 1028px) {
   .title-image {
     position: static;
     transform: rotate(0);
+  }
+} */
+@media (min-width: 768px) {
+  .big-heading,
+  .sub-heading {
+    font-size: 3rem;
+  }
+  #title {
+    text-align: left;
+  }
+  #title .container {
+    padding: 2vh 10vw 0;
+  }
+  .navbar-collapse {
+    justify-content: end;
+  }
+  .container-fluid {
+    padding: 0 10vw;
   }
 }

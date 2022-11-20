@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <title>Save Dogs</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -35,8 +31,9 @@
 
   <body>
     <section class="colored-section" id="title">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Nav Bar -->
+
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#"
             >Save <br />
@@ -59,10 +56,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Animais</a>
+                <a class="nav-link" href="#animais">Animais</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Como adotar</a>
+                <a class="nav-link" href="#como-adotar">Como Adotar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tabela-vacina">Vacinas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
             </ul>
           </div>
@@ -74,48 +77,209 @@
           <div class="col-lg-6">
             <h1 class="big-heading">Adote um amigo.</h1>
             <h1 class="sub-heading">Salve vidas.</h1>
-            <button type="button" class="btn btn-warning btn-lg pets-button">
-              <i class="fa-solid fa-paw"></i> Pets disponíveis
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-warning btn-lg adopt-button"
-            >
-              Quero adotar!
-            </button>
+            <a href="#animais">
+              <button type="button" class="btn btn-warning">
+                <i class="fa-solid fa-paw"></i> Pets disponíveis
+              </button>
+            </a>
           </div>
 
           <div class="col-lg-6">
-            <img
-              class="title-image"
-              src="assets/images/main-image-dog.png"
-              alt=""
-            />
+            <img class="title-image" src="assets/images/bg-pet.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Partners -->
+
     <section>
-      <div class="row partners">
-        <div class="col">
-          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+      <div class="container-fluid">
+        <div class="row partners">
+          <div class="col-3">
+            <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+          </div>
         </div>
-        <div class="col">
-          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Animals -->
+
+    <section id="animais">
+      <div class="container-fluid">
+        <h4 class="titles">Animais</h4>
+        <p>Veja os cachorros que estão aguardando um lar.</p>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <img
+                src="https://www.petlove.com.br/images/breeds/192401/profile/original/srd-p.jpg?1532539578"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jacob</h5>
+                <span class="badge bg-dark">Macho</span>
+                <span class="badge bg-dark">1 ano</span>
+                <span class="badge bg-warning text-dark">Bulldog</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img
+                src="https://d1i66q5sf0j0rj.cloudfront.net/wp-content/uploads/2018/06/14171623/curiosidades-sobre-cachorros-vira-latas.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jacob</h5>
+                <span class="badge bg-dark">Macho</span>
+                <span class="badge bg-dark">1 ano</span>
+                <span class="badge bg-warning text-dark">Bulldog</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Como adotar -->
+
+    <section id="como-adotar">
+      <div class="container-fluid">
+        <h4 class="titles">Adoção</h4>
+        <p>Pequenos passos para dar um lar para um animal.</p>
+        <ol>
+          <li>
+            Deixe suas informações de contato e o animal que você deseja adotar.
+          </li>
+          <li>Entraremos em contato para avaliarmos as condições juntos.</li>
+          <li>
+            Agendaremos para que você venha nos visitar e conhecer seu novo
+            amigo.
+          </li>
+          <li>
+            Por prezarmos a saúde dos animais, ao serem adotados, a cada 3 meses
+            estaremos entrando em contato para que possamos fazer uma visita e
+            checar as condições de saúde do pet.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Tabela Vacinacao -->
+
+    <section id="tabela-vacina">
+      <div class="container-fluid">
+        <h4 class="titles">tabela de vacinação</h4>
+        <p>Tabela com as principais doses que seu cachorro precisa ter.</p>
+        <table class="table table-light table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Vacina</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Doses</th>
+              <th scope="col">Reforço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>V8/V10</td>
+              <td>6 a 8 semanas</td>
+              <td>3 a 4 com intervalo de 3 a 4 semanas</td>
+              <td rowspan="3">Anual (dose única)</td>
+            </tr>
+            <tr>
+              <td>Gripe Canina</td>
+              <td>A critério do veterinário</td>
+              <td>2 com intervalo de 3 a 4 semanas</td>
+            </tr>
+            <tr>
+              <td>Raiva Canina</td>
+              <td>16 semanas</td>
+              <td>Dose única aos 4 meses</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contato -->
+
+    <section id="contato">
+      <div class="container-fluid">
+        <h4 class="titles">contato</h4>
+        <p>Para mais informações sobre adoção.</p>
+
+        <div class="col-12 contact-container">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
         </div>
-        <div class="col">
-          <img src="./assets/images/Bayer-Logo.wine.svg" alt="" />
+        <div class="col-12 contact-container">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+        <div class="col-12 contact-container">
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Email"
+          />
+        </div>
+        <div class="row contact-container">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Telefone"
+              aria-label="Telefone"
+            />
+          </div>
+          <div class="col-6">
+            <select id="inputState" class="form-select">
+              <option selected>Animal...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-check contact-container">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Aceito receber notícias e novidades a respeito de novos animais para
+            adoção.
+          </label>
+        </div>
+        <div class="btn-enviar">
+          <button type="button" class="btn btn-primary">Enviar</button>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-
     <footer class="white-section" id="footer">
       <div class="container-fluid">
         <i class="social-icon fab fa-facebook-f"></i>
