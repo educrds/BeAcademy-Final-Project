@@ -1,13 +1,14 @@
 :root {
   --main-blue: #0067ba;
-  --main-yellow: #fbbd55;
   --main-white: #fcfcfc;
   --gray: #d5d5d5;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-white);
@@ -18,24 +19,30 @@ h4,
 h5 {
   font-weight: 700;
 }
+
 h4 {
   margin-bottom: 0;
   text-transform: uppercase;
   color: var(--main-blue);
 }
+
 p {
   color: #8f8f8f;
 }
+
 section {
   margin-bottom: 4vh;
 }
+
 ol li {
   padding: 1vh 0;
 }
+
 footer {
   text-align: center;
   background-color: var(--main-blue);
 }
+
 footer p {
   margin: 0;
   padding: 2vh 0;
@@ -100,6 +107,7 @@ footer p {
 .card {
   margin: 0.5vh 0;
 }
+
 .card img {
   height: 150px;
   width: 100%;
@@ -111,6 +119,7 @@ footer p {
   background-color: var(--main-blue);
   color: var(--main-white);
 }
+
 .table td {
   vertical-align: middle;
 }
@@ -139,16 +148,20 @@ footer p {
   .navbar-collapse {
     justify-content: end;
   }
+  
   #main {
     text-align: left;
   }
+  
   #main .container {
     padding: 2vh 10vw 0;
   }
+  
   .big-heading,
   .sub-heading {
     font-size: 2.7rem;
   }
+  
   .container-fluid {
     padding: 0 10vw;
   }
