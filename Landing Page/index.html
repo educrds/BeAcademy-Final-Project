@@ -227,6 +227,7 @@
               placeholder="First name"
               aria-label="First name"
             />
+            <p class="error-message"></p>
           </div>
           <div class="col-12 contact-container">
             <input
@@ -236,29 +237,35 @@
               placeholder="Last name"
               aria-label="Last name"
             />
+            <p class="error-message"></p>
           </div>
           <div class="col-12 contact-container">
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="email"
               placeholder="Email"
             />
+            <p class="error-message"></p>
           </div>
           <div class="row contact-container">
             <div class="col-6">
               <input
-                type="text"
+                type="tel"
                 class="form-control"
                 id="phone"
                 placeholder="Telefone"
                 aria-label="Telefone"
               />
+              <p class="error-message"></p>
             </div>
             <div class="col-6">
-              <select id="inputState" class="form-select">
-                <option selected>Animal...</option>
-                <option>...</option>
+              <select
+                id="select-animals"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected>Animais</option>
               </select>
             </div>
           </div>
@@ -266,7 +273,6 @@
             <input
               class="form-check-input"
               type="checkbox"
-              value=""
               id="flexCheckChecked"
             />
             <label class="form-check-label" for="flexCheckChecked">
@@ -274,6 +280,7 @@
               para adoção.
             </label>
           </div>
+
           <button
             type="submit"
             id="button-submit"

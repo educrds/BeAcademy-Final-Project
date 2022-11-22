@@ -136,6 +136,11 @@ footer p {
   width: 150px;
 }
 
+.error-message {
+  font-size: 0.85rem;
+  color: #dc3545;
+}
+
 /* Footer Section */
 
 .social-icon {
@@ -148,20 +153,20 @@ footer p {
   .navbar-collapse {
     justify-content: end;
   }
-  
+
   #main {
     text-align: left;
   }
-  
+
   #main .container {
     padding: 2vh 10vw 0;
   }
-  
+
   .big-heading,
   .sub-heading {
     font-size: 2.7rem;
   }
-  
+
   .container-fluid {
     padding: 0 10vw;
   }
