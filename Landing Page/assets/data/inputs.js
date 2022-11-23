@@ -15,6 +15,11 @@ const inputs = [
     name: "phone",
     pattern: /\(\d{2}\) \d{5}-\d{4}/,
   },
+  {
+    name: "select-animals",
+    pattern: /\d/,
+  },
+  
 ];
 
 export {inputs}

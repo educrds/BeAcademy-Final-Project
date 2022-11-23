@@ -8,7 +8,10 @@ phone.addEventListener("keypress", maskPhoneInput);
 function maskPhoneInput(event) {
   const phoneNumber = event.target.value.replace(/[^\d]/g, "");
 
-  event.target.value = `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2,7)}-${phoneNumber.slice(7, 11)}`;
+  event.target.value = `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(
+    2,
+    7
+  )}-${phoneNumber.slice(7, 10)}`;
 }
 
 function handleSubmit(event) {
@@ -18,16 +21,19 @@ function handleSubmit(event) {
 
 function validateInputs() {
   inputs.forEach((input) => {
+
     const inputElement = document.getElementById(input.name);
-    const errorMessage = inputElement.parentElement.querySelector(`.error-message`);
-    const patternMatch = input.pattern.test(inputElement.value);
+    const errorMessage =
+      inputElement.parentElement.querySelector(`.error-message`);
+    // const patternMatch = !input.pattern.test(inputElement.value);
 
     try {
-      if (!inputElement.value) throw (errorMessage.innerHTML = "Campo obrigatório");
-      else if (!patternMatch) throw (errorMessage.innerHTML = "Formato inválido");
+      if (!inputElement.value)
+        throw (errorMessage.innerHTML = "Campo obrigatório");
+      else if (!input.pattern.test(inputElement.value))
+        throw (errorMessage.innerHTML = "Formato inválido");
       else throw (errorMessage.innerHTML = "");
-    } 
-    catch (error) {
+    } catch (error) {
       error;
     }
   });
