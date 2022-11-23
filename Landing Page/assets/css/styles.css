@@ -2,6 +2,7 @@
   --main-blue: #0067ba;
   --main-white: #fcfcfc;
   --gray: #d5d5d5;
+  --dark-gray: #8f8f8f;
 }
 
 * {
@@ -26,8 +27,9 @@ h4 {
   color: var(--main-blue);
 }
 
-p {
-  color: #8f8f8f;
+p,
+li {
+  color: var(--dark-gray);
 }
 
 section {
@@ -45,15 +47,14 @@ footer {
 
 footer p {
   margin: 0;
-  padding: 2vh 0;
+  padding: 1.5vh 0;
   color: var(--gray);
 }
 
 /* Headings */
 
-.big-heading,
-.sub-heading {
-  font-size: 2rem;
+.main-heading {
+  font-size: 2.5rem;
 }
 
 /* Partners */
