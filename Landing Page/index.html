@@ -8,7 +8,6 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <title>Save Dogs</title>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,8 +35,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#"
-            >Save <br />
-            Dogs</a
+            ><i class="fa-solid fa-hippo"></i> BrZoo</a
           >
           <button
             class="navbar-toggler"
@@ -56,13 +54,13 @@
                 <a class="nav-link" href="#animais">Animais</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#como-adotar">Como Adotar</a>
+                <a class="nav-link" href="#como-adotar">Dicas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tabela-vacina">Vacinas</a>
+                <a class="nav-link" href="#tabela-vacina">Funcionamento</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
+                <a class="nav-link" href="#contato">Agendamento</a>
               </li>
             </ul>
           </div>
@@ -72,38 +70,17 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h1 class="main-heading">Adote um amigo.</h1>
-            <h1 class="main-heading">Salve vidas.</h1>
-            <a href="#animais">
-              <button type="button" class="btn btn-warning">
-                <i class="fa-solid fa-paw"></i> Pets disponíveis
-              </button>
-            </a>
-          </div>
-
-          <div class="col-lg-6">
-            <img class="dog-image" src="assets/images/bg-pet.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partners -->
-
-    <section>
-      <div class="container-fluid">
-        <div class="row partners">
-          <div class="col">
-            <img src="./assets/images/Cargill-Logo.svg" alt="" />
-          </div>
-          <div class="col">
-            <img src="./assets/images/Bayer-Logo.svg" alt="" />
-          </div>
-          <div class="col">
-            <img src="./assets/images/Clifford-Logo.svg" alt="" />
-          </div>
-          <div class="col">
-            <img src="./assets/images/Petonbed-Logo.svg" alt="" />
+            <h1 class="main-heading">Maior Zoológico.</h1>
+            <h1 class="main-heading">da América Latina.</h1>
+            <a class="btn btn-success btn-lg" href="#animais" role="button"
+              >Animais</a
+            >
+            <a
+              class="btn btn-outline-light btn-lg"
+              href="#contato"
+              role="button"
+              ><i class="fa-regular fa-clock"></i> Venha nos visitar</a
+            >
           </div>
         </div>
       </div>
@@ -114,7 +91,7 @@
     <section id="animais">
       <div class="container-fluid">
         <h4 class="titles">Animais</h4>
-        <p>Veja os cachorros que estão aguardando um lar.</p>
+        <p>Veja os animais disponíveis em nosso Zoológico.</p>
         <div class="row" id="animals-list"></div>
       </div>
     </section>
@@ -123,21 +100,18 @@
 
     <section id="como-adotar">
       <div class="container-fluid">
-        <h4 class="titles">Adoção</h4>
-        <p>Pequenos passos para dar um lar para um animal.</p>
+        <h4 class="titles">Dicas</h4>
+        <p>Veja as principais dicas para uma boa visitação.</p>
         <ol>
           <li>
-            Deixe suas informações de contato e o animal que você deseja adotar.
+            Compre os ingressos antecipadamente, pessoalmente ou através de
+            nosso site.
           </li>
-          <li>Entraremos em contato para avaliarmos as condições juntos.</li>
+          <li>Chegue cedo, pode haver grandes filas...</li>
+          <li>Traga comida e proteção solar.</li>
           <li>
-            Agendaremos para que você venha nos visitar e conhecer seu novo
-            amigo.
-          </li>
-          <li>
-            Por prezarmos a saúde dos animais, ao serem adotados, a cada 3 meses
-            estaremos entrando em contato para que possamos fazer uma visita e
-            checar as condições de saúde do pet.
+            Somente é permitido alimentar os animais com a autorização do
+            cuidador.
           </li>
         </ol>
       </div>
@@ -147,33 +121,40 @@
 
     <section id="tabela-vacina">
       <div class="container-fluid">
-        <h4 class="titles">tabela de vacinação</h4>
-        <p>Tabela com as principais doses que seu cachorro precisa ter.</p>
+        <h4 class="titles">Agenda</h4>
+        <p>Conheça nossa agenda semanal.</p>
         <table class="table table-light table-bordered">
           <thead>
             <tr>
-              <th scope="col">Vacina</th>
-              <th scope="col">Idade</th>
-              <th scope="col">Doses</th>
-              <th scope="col">Reforço</th>
+              <th scope="col">Dia da semana</th>
+              <th scope="col">Horário de Funcionamento</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>V8/V10</td>
-              <td>6 a 8 semanas</td>
-              <td>3 a 4 com intervalo de 3 a 4 semanas</td>
-              <td rowspan="3">Anual (dose única)</td>
+              <td>Segunda-feira</td>
+              <td rowspan="2">08:00 - 14:00</td>
             </tr>
             <tr>
-              <td>Gripe Canina</td>
-              <td>A critério do veterinário</td>
-              <td>2 com intervalo de 3 a 4 semanas</td>
+              <td>Terça-feira</td>
             </tr>
             <tr>
-              <td>Raiva Canina</td>
-              <td>16 semanas</td>
-              <td>Dose única aos 4 meses</td>
+              <td>Quarta-feira</td>
+              <td rowspan="2">10:00 - 16:00</td>
+            </tr>
+            <tr>
+              <td>Quinta-feira</td>
+            </tr>
+            <tr>
+              <td>Sexta-feira</td>
+              <td rowspan="2">07:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Sabádo</td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td>07:00 - 13:00</td>
             </tr>
           </tbody>
         </table>
@@ -184,9 +165,13 @@
 
     <section id="contato">
       <div class="container-fluid">
-        <h4 class="titles">contato</h4>
-        <p>Para mais informações sobre adoção.</p>
-
+        <h4 class="titles">Agendamento</h4>
+        <p>Agende uma visita conosco.</p>
+        <div id="verification">
+          <p><i class="fa-solid fa-circle-check"></i> Em breve entraremos em
+            contato por email com mais informações!
+          </p>
+        </div>
         <form id="form">
           <div class="row">
             <div class="col-md-6 col-12">
@@ -231,13 +216,7 @@
               <p class="error-message"></p>
             </div>
             <div class="col-6">
-              <select
-                id="select-animals"
-                class="form-select"
-                aria-label="Default select example"
-              >
-                <option selected disabled value="">Animais</option>
-              </select>
+              <input id="date" class="form-control" type="date" />
               <p class="error-message"></p>
             </div>
           </div>
@@ -248,8 +227,7 @@
               id="flexCheckChecked"
             />
             <p class="form-check-label" for="flexCheckChecked">
-              Aceito receber notícias e novidades a respeito de novos animais
-              para adoção.
+              Aceito receber notificações sobre novidades de eventos do BrZoo.
             </p>
           </div>
 
@@ -276,7 +254,7 @@
     </footer>
   </body>
   <script type="module" src="./assets/js/main.js"></script>
-  <script type="module" src="./assets/js/animals.js"></script>
+  <script src="./assets/js/animals.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

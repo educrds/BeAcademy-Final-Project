@@ -1,5 +1,7 @@
 import { inputs } from "../data/inputs.js";
+const myForm = document.getElementById("form");
 const phone = document.getElementById("phone");
+const formVerification = document.getElementById("verification");
 const submitButton = document.getElementById("button-submit");
 
 submitButton.addEventListener("click", handleSubmit);
@@ -21,20 +23,31 @@ function handleSubmit(event) {
 
 function validateInputs() {
   inputs.forEach((input) => {
-
-    const inputElement = document.getElementById(input.name);
+    const inputValue = document.getElementById(input.name);
     const errorMessage =
-      inputElement.parentElement.querySelector(`.error-message`);
-    // const patternMatch = !input.pattern.test(inputElement.value);
+      inputValue.parentElement.querySelector(`.error-message`);
+    const patternMatch = input.pattern.test(inputValue.value);
 
     try {
-      if (!inputElement.value)
+      if (!inputValue.value)
         throw (errorMessage.innerHTML = "Campo obrigatório");
-      else if (!input.pattern.test(inputElement.value))
+      else if (!patternMatch)
         throw (errorMessage.innerHTML = "Formato inválido");
-      else throw (errorMessage.innerHTML = "");
+      else {
+        input.isValid = true;
+        errorMessage.innerHTML = "";
+      }
     } catch (error) {
       error;
     }
   });
+  const inputIsValid = inputs.every(
+    (inputField) => inputField.isValid === true
+  );
+  inputIsValid
+    ? setTimeout(() => {
+        formVerification.style.display = "inherit";
+        myForm.reset();
+      }, 1000)
+    : null;
 }

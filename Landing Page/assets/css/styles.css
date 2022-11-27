@@ -1,5 +1,6 @@
 :root {
-  --blue: #0067ba;
+  --green: #19b763;
+  --opacity-green: #19b76315;
   --white: #fcfcfc;
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
@@ -24,7 +25,7 @@ h5 {
 h4 {
   margin-bottom: 0;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--green);
 }
 
 p,
@@ -35,8 +36,10 @@ li {
 section {
   margin-bottom: 4vh;
 }
-ol{
-  background-color: #0066ba10;
+ol {
+  padding: 2vh 2vw;
+  border-radius: 20px;
+  background-color: var(--opacity-green);
 }
 ol li {
   padding: 1vh 0;
@@ -44,7 +47,7 @@ ol li {
 
 footer {
   text-align: center;
-  background-color: var(--blue);
+  background-color: var(--green);
 }
 
 footer p {
@@ -57,16 +60,6 @@ footer p {
 
 .main-heading {
   font-size: 2rem;
-}
-
-/* Partners */
-
-.partners .col {
-  text-align: center;
-  margin: auto 0;
-}
-.partners img {
-  width: 80px;
 }
 
 /* Navigation Bar */
@@ -92,58 +85,53 @@ footer p {
 /* Main Section */
 
 #main {
-  background-color: var(--blue);
+  background-image: url(https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100vw;
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
 }
 
 #main .container {
   padding: 2vh 10vw 0;
-}
-
-#main .dog-image {
-  width: 100%;
+  height: 100vh;
 }
 
 /* Card */
 
 .card {
-  margin: 0.5vh 0;
+  height: 420px;
+  margin: 1vh 0;
+  border-radius: 20px;
+}
+
+.card-title {
+  text-transform: capitalize;
+  color: var(--green);
 }
 
 .card img {
+  border-radius: 20px 20px 0 0;
   height: 165px;
   width: 100%;
-}
-.badge{
-  background-color: var(--gray);
-  border-radius: 20px;
-  color: var(--dark-gray);
-}
-.badge.male{
-  background-color: var(--blue) ;
-  color: var(--white)
-}
-.badge.female{
-  background-color: #d64d88 ;
-  color: var(--white)
 }
 
 /* Vacina Section */
 
 .table th {
-  background-color: var(--blue);
+  background-color: var(--green);
   color: var(--white);
 }
 
-.table td {
+.table td:nth-child(2) {
   vertical-align: middle;
+  text-align: center;
 }
 
 /* Contato Section */
 
 .btn-submit {
-  background-color: var(--blue);
+  background-color: var(--green);
   border: none;
   width: 150px;
 }
@@ -151,6 +139,19 @@ footer p {
 .error-message {
   font-size: 0.85rem;
   color: #dc3545;
+}
+
+#verification {
+  border-radius: 15px;
+  display: none;
+  padding: 1.5vh 1vw;
+  margin-bottom: 2vh;
+  background-color: var(--opacity-green);
+}
+
+#verification p {
+  color: var(--green);
+  margin: auto 0;
 }
 
 /* Footer Section */
@@ -174,8 +175,7 @@ footer p {
     padding: 2vh 10vw 0;
   }
 
-  .big-heading,
-  .sub-heading {
+  .main-heading {
     font-size: 2.7rem;
   }
 
