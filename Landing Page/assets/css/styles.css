@@ -37,9 +37,8 @@ section {
   margin-bottom: 4vh;
 }
 ol {
-  padding: 2vh 2vw;
-  border-radius: 20px;
   background-color: var(--opacity-green);
+  border-radius: 20px;
 }
 ol li {
   padding: 1vh 0;
@@ -82,19 +81,25 @@ footer p {
   font-size: 1.2rem;
 }
 
+.toggler-icon {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
 /* Main Section */
 
 #main {
-  background-image: url(https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background: rgba(0, 0, 0, 0.4)
+    url(https://images.pexels.com/photos/38280/monkey-mandril-africa-baboon-38280.jpeg?auto=compress&cs=tinysrgb&w=400);
+  background-blend-mode: darken;
   background-size: 100vw;
-  background-repeat: no-repeat;
-  color: #fff;
+  color: var(--white);
+  min-height: 524px;
   text-align: center;
 }
 
 #main .container {
   padding: 2vh 10vw 0;
-  height: 100vh;
 }
 
 /* Card */
@@ -168,6 +173,10 @@ footer p {
   }
 
   #main {
+    background: rgba(0, 0, 0, 0.3)
+      url(https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-blend-mode: darken;
+    background-size: cover;
     text-align: left;
   }
 
