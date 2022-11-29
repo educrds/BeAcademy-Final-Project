@@ -1,36 +1,34 @@
-const animalsList = document.getElementById("animals-list");
-const apiUrl = "https://zoo-animal-api.herokuapp.com/animals/rand/10";
+const animalsHtmlList = document.getElementById("animals-list");
+const path = "assets/data/animals.json";
 
-fetch(apiUrl)
+fetch(path)
   .then((response) => response.json())
   .then((data) => data.map(convertAnimalsToDiv))
   .catch((err) => console.log(err));
 
 function convertAnimalsToDiv(animal) {
-  loadAnimals(
-    `<div  div class="col-6 col-md-3">
+  const { name, type, photoUrl, description } = animal;
+
+  loadAnimals(`<div class="col-6 col-md-3">
       <div class="card">
         <img
-          src="${animal.image_link}"
-          class="card-img-top"
-          alt="thumbnail animal ${animal.name}"
+          src="${photoUrl}"
+          alt="thumbnail animal ${name}"
         />
         <div class="card-body">
-          <h5 class="card-title">${animal.name}</h5>
+          <h5 class="card-title ">${name}</h5>
           <p>
-            <i class="fa-solid fa-tree"></i
-            ><strong> Habitat: </strong> ${animal.habitat}
+            <i class="fa-solid fa-tag"></i
+            > ${type}
           </p>
           <p>
-            <i class="fa-solid fa-heart"></i
-            ><strong> Lifespan: </strong> ${animal.lifespan}
+          <i class="fa-solid fa-circle-info"></i> ${description}
           </p>
         </div>
       </div>
-    </div>`
-  );
+    </div>`);
 }
 
 function loadAnimals(animal) {
-  animalsList.innerHTML += animal;
+  animalsHtmlList.innerHTML += animal;
 }

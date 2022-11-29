@@ -11,10 +11,7 @@ phone.addEventListener("keypress", maskPhoneInput);
 function maskPhoneInput(event) {
   const phoneNumber = event.target.value.replace(/[^\d]/g, "");
 
-  event.target.value = `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(
-    2,
-    7
-  )}-${phoneNumber.slice(7, 10)}`;
+  event.target.value = `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2,7)}-${phoneNumber.slice(7, 10)}`;
 }
 
 function handleSubmit(event) {
