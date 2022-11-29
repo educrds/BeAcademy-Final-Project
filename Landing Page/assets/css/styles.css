@@ -96,17 +96,14 @@ footer p {
   color: var(--white);
   min-height: 524px;
   text-align: center;
-}
-
-#main .container {
-  padding: 2vh 10vw 0;
+  padding: 3vh 0;
 }
 
 /* Card */
 
 .card {
   height: 435px;
-  margin: .5vh 0;
+  margin: 0.5vh 0;
   border-radius: 20px;
 }
 
