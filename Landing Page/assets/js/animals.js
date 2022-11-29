@@ -9,20 +9,19 @@ fetch(path)
 function convertAnimalsToDiv(animal) {
   const { name, type, photoUrl, description } = animal;
 
-  loadAnimals(`<div class="col-6 col-md-3">
+  loadAnimals(
+    `<div class="col-6 col-md-3">
       <div class="card">
-        <img
-          src="${photoUrl}"
-          alt="thumbnail animal ${name}"
+        <img src="${photoUrl}" alt="thumbnail animal ${name}"
         />
         <div class="card-body">
           <h5 class="card-title ">${name}</h5>
           <p>
-            <i class="fa-solid fa-tag"></i
-            > ${type}
+            <i class="fa-solid fa-tag"></i> 
+            ${type}
           </p>
           <p>
-          <i class="fa-solid fa-circle-info"></i> ${description}
+            <i class="fa-solid fa-circle-info"></i> ${description}
           </p>
         </div>
       </div>
