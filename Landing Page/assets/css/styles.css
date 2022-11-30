@@ -1,9 +1,21 @@
+.dark-mode:root {
+  --green: #386641;
+  --bg-body: #0d1520;
+  --bg-card: #212836;
+  --border-color: #cfd4d91a;
+  --gray: #d5d5d5;
+  --dark-gray: #8f8f8f;
+  --theme-icon: "\f185";
+}
 :root {
-  --green: #19b763;
-  --opacity-green: #19b76315;
+  --green: #386641;
+  --bg-body: #fcfcfc;
+  --bg-card: #ffffff;
+  --border-color: #d4d4d4;
   --white: #fcfcfc;
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
+  --theme-icon: "\f186";
 }
 
 * {
@@ -13,7 +25,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--white);
+  background-color: var(--bg-card);
 }
 
 h1,
@@ -37,7 +49,9 @@ section {
   margin-bottom: 4vh;
 }
 ol {
-  background-color: var(--opacity-green);
+  background-color: var(--bg-card);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
   border-radius: 20px;
 }
 ol li {
@@ -86,6 +100,26 @@ footer p {
   font-size: 1.5rem;
 }
 
+#theme-icon {
+  align-self: center;
+  border-radius: 15px;
+  font-size: 1.175rem;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 15px;
+}
+
+#theme-icon:hover{
+  color: #000;
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+#theme-icon:before {
+  font-family: fontAwesome;
+  content: var(--theme-icon);
+}
+
 /* Main Section */
 
 #main {
@@ -105,6 +139,8 @@ footer p {
   height: 435px;
   margin: 0.5vh 0;
   border-radius: 20px;
+  background-color: var(--bg-card);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .card-title {
@@ -120,9 +156,13 @@ footer p {
 
 /* Vacina Section */
 
+.table {
+  background-color: var(--bg-card);
+  color: var(--dark-gray);
+  border: 1px solid var(--border-color);
+}
 .table th {
   background-color: var(--green);
-  color: var(--white);
 }
 
 .table td:nth-child(2) {
@@ -131,6 +171,11 @@ footer p {
 }
 
 /* Contato Section */
+
+.form-control {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+}
 
 .btn-submit {
   background-color: var(--green);
@@ -148,7 +193,7 @@ footer p {
   display: none;
   padding: 1.5vh 1vw;
   margin-bottom: 2vh;
-  background-color: var(--opacity-green);
+  background-color: var(--green);
 }
 
 #verification p {

@@ -4,9 +4,13 @@ const myForm = document.getElementById("form");
 const phone = document.getElementById("phone");
 const verificationBox = document.getElementById("verification");
 const submitButton = document.getElementById("button-submit");
+const themeButton = document.getElementById("theme-icon");
 
 submitButton.addEventListener("click", handleSubmit);
 phone.addEventListener("keypress", maskPhoneInput);
+themeButton.addEventListener("click", () =>
+  document.documentElement.classList.toggle("dark-mode")
+);
 
 function maskPhoneInput(event) {
   const phoneNumber = event.target.value.replace(/[^\d]/g, "");
