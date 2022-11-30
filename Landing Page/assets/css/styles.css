@@ -95,21 +95,16 @@ footer p {
   font-size: 1.2rem;
 }
 
-.toggler-icon {
-  color: var(--white);
-  font-size: 1.5rem;
-}
-
 #theme-icon {
   align-self: center;
   border-radius: 15px;
   font-size: 1.175rem;
-  color: var(--white);
-  border: 1px solid var(--white);
-  border-radius: 15px;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  border-radius: 30px;
 }
 
-#theme-icon:hover{
+#theme-icon:hover {
   color: #000;
   background-color: var(--white);
   border-color: var(--white);
@@ -131,6 +126,15 @@ footer p {
   min-height: 524px;
   text-align: center;
   padding: 3vh 0;
+}
+
+.btn-animals {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.btn-animals:hover {
+  opacity: 0.8;
 }
 
 /* Card */
