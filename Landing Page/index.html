@@ -58,13 +58,10 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#fotos">Fotos</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#animais">Animais</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#dicas">Dicas</a>
+                <a class="nav-link" href="#map">Localização</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#funcionamento">Funcionamento</a>
@@ -84,7 +81,7 @@
         <div>
           <h1 class="main-heading">
             Maior Zoológico. <br />
-            da América Latina
+            da <span class="sub-heading">América Latina</span>
           </h1>
           <a class="btn btn-lg btn-animals" href="#animais" role="button">Animais</a>
           <a class="btn btn-lg btn-outline-light" href="#agendamento" role="button"
@@ -130,21 +127,21 @@
               <img
                 src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 class="d-block w-100"
-                alt="..."
+                alt="imagem do animal onça"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
                 class="d-block w-100"
-                alt="..."
+                alt="imagem do animal raposa"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
                 class="d-block w-100"
-                alt="..."
+                alt="imagem do animal tartaruga"
               />
             </div>
           </div>
@@ -177,6 +174,21 @@
         <h4 class="titles">Animais</h4>
         <p>Veja os animais disponíveis em nosso Zoológico.</p>
         <div class="row" id="animals-list"></div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container-fluid">
+        <h4 class="titles">Localização</h4>
+        <p>Veja como chegar em nosso zoológico.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14618.804467820028!2d-46.6204495!3d-23.6508725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7f1ba1b449ce36a!2sZool%C3%B3gico%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1669931324811!5m2!1spt-BR!2sbr"
+          class="map"
+          width="100%"
+          height="350"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
@@ -333,6 +345,7 @@
             <a href="#">Home</a>
             <a href="#fotos">Fotos</a>
             <a href="#animals">Animais</a>
+            <a href="#map">Localização</a>
             <a href="#dicas">Dicas</a>
             <a href="#funcionamento">Funcionamento</a>
             <a href="#agendamento">Agendamento</a>

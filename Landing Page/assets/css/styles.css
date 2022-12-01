@@ -89,6 +89,9 @@ footer p {
   font-size: 2rem;
 }
 
+.sub-heading {
+  color: var(--green);
+}
 
 /* Navigation Bar */
 
@@ -135,7 +138,7 @@ footer p {
 /* Main Section */
 
 #main {
-  background: rgba(0, 0, 0, 0.4)
+  background: rgba(0, 0, 0, 0.5)
     url(https://images.pexels.com/photos/38280/monkey-mandril-africa-baboon-38280.jpeg?auto=compress&cs=tinysrgb&w=400);
   background-blend-mode: darken;
   background-size: 100vw;
@@ -176,6 +179,7 @@ footer p {
 }
 
 .card-text {
+  color: var(--dark-gray);
   margin: 2vh 0 0;
 }
 
@@ -189,13 +193,20 @@ footer p {
   background-color: #9ec1a3;
   border-radius: 20px;
   color: var(--green);
-  font-size: 0.825rem;
+  font-size: 0.75rem;
 }
 
 .see-more {
   float: right;
   font-size: 1.5rem;
   color: var(--green);
+}
+
+/* Map */
+
+.map {
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
 /* Funcionamento Section */

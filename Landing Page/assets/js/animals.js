@@ -12,7 +12,7 @@ function convertAnimalsToDiv(animal) {
   loadAnimals(`
     <div class="col-6 col-md-3">
       <div class="card">
-        <img src="${photoUrl}" />
+        <img src="${photoUrl}" alt="imagem do animal ${name}"/>
         <div class="card-body">
           <h5 class="card-title">${name}</h5>
           <div>
