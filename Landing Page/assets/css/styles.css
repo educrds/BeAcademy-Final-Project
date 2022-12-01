@@ -70,17 +70,7 @@ footer p {
   color: var(--gray);
 }
 
-/* Headings */
-
-.main-heading {
-  font-size: 2rem;
-}
-
-/* Navigation Bar */
-
-.navbar {
-  padding: 0 0 4.5rem;
-}
+/* Brand Logo */
 
 .brand {
   font-size: 2.3rem;
@@ -91,6 +81,19 @@ footer p {
 .brand:hover {
   color: var(--white);
   opacity: 0.65;
+}
+
+/* Headings */
+
+.main-heading {
+  font-size: 2rem;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
@@ -106,6 +109,8 @@ footer p {
 .nav-link {
   font-size: 1.2rem;
 }
+
+/* Theme mode */
 
 #theme-icon {
   align-self: center;
@@ -192,7 +197,8 @@ footer p {
   font-size: 1.5rem;
   color: var(--green);
 }
-/* Vacina Section */
+
+/* Funcionamento Section */
 
 .table {
   background-color: var(--secondary-color);
@@ -210,7 +216,7 @@ footer p {
   text-align: center;
 }
 
-/* Contato Section */
+/* Agendamento Section */
 
 .form-control {
   background: var(--secondary-color);
@@ -270,6 +276,8 @@ footer p {
   color: var(--gray);
   margin: 3vh 4vw 0;
 }
+
+/* Sizes */
 
 @media (min-width: 768px) {
   .navbar-collapse {
