@@ -46,7 +46,6 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#"
             ><i class="fa-solid fa-hippo"></i> BeZoo</a
-
           >
           <button
             class="navbar-toggler"
@@ -61,6 +60,9 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
+                <a class="nav-link" href="#fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#animais">Animais</a>
               </li>
               <li class="nav-item">
@@ -72,9 +74,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#agendamento">Agendamento</a>
               </li>
-              <li class="nav-item" >
-                <button class="btn" type="button" id="theme-icon">
-                </button>
+              <li class="nav-item">
+                <button class="btn" type="button" id="theme-icon"></button>
               </li>
             </ul>
           </div>
@@ -91,6 +92,82 @@
           <a class="btn btn-lg btn-outline-light" href="#agendamento" role="button"
             ><i class="fa-regular fa-clock"></i> Venha nos visitar</a
           >
+        </div>
+      </div>
+    </section>
+
+    <section id="fotos">
+      <div class="container-fluid">
+        <h4 class="titles">Galeria</h4>
+        <p>Conheça fotos incríveis de nossos animais.</p>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
@@ -184,39 +261,49 @@
         <form id="form">
           <div class="row">
             <div class="col-md-6 col-12">
+              <label for="first-name" class="form-label">Nome</label>
               <input
                 type="text"
                 class="form-control"
                 id="first-name"
-                placeholder="Nome"
+                placeholder="Insira seu nome"
               />
               <p class="error-message"></p>
             </div>
             <div class="col-md-6 col-12">
+              <label for="last-name" class="form-label">Sobrenome</label>
               <input
                 type="text"
                 class="form-control"
                 id="last-name"
-                placeholder="Sobrenome"
+                placeholder="Insira seu sobrenome"
               />
               <p class="error-message"></p>
             </div>
           </div>
           <div class="col-12">
-            <input type="text" class="form-control" id="email" placeholder="Email" />
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="ex: marcos@gmail.com"
+            />
             <p class="error-message"></p>
           </div>
           <div class="row">
             <div class="col-6">
+              <label for="phone" class="form-label">Telefone</label>
               <input
                 type="tel"
                 class="form-control"
                 id="phone"
-                placeholder="Telefone"
+                placeholder="ex: (34) 98722-9090"
               />
               <p class="error-message"></p>
             </div>
             <div class="col-6">
+              <label for="date" class="form-label">Data</label>
               <input id="date" class="form-control" type="date" />
               <p class="error-message"></p>
             </div>

@@ -137,11 +137,19 @@ footer p {
   opacity: 0.8;
 }
 
+/* Carousel */
+
+.carousel-inner {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
 /* Card */
 
 .card {
   height: 435px;
-  margin: 0.5vh 0;
+  margin: 1vh 0;
   border-radius: 20px;
   background-color: var(--bg-card);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -181,6 +189,9 @@ footer p {
   border: 1px solid var(--border-color);
 }
 
+.form-label{
+  color: var(--dark-gray);
+}
 .btn-submit {
   background-color: var(--green);
   border: none;
@@ -217,6 +228,9 @@ footer p {
   .navbar-collapse {
     justify-content: end;
   }
+  .container-fluid {
+    padding: 0 10vw;
+  }
 
   #main {
     background: rgba(0, 0, 0, 0.3)
@@ -234,7 +248,7 @@ footer p {
     font-size: 2.7rem;
   }
 
-  .container-fluid {
-    padding: 0 10vw;
+  .carousel-inner{
+    height: 475px;
   }
 }
