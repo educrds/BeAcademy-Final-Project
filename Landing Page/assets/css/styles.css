@@ -164,6 +164,11 @@ footer p {
   box-shadow: var(--shadow);
 }
 
+.carousel-photos{
+  display: block;
+  width: 100%;
+}
+
 /* Card */
 
 .card {
@@ -207,6 +212,8 @@ footer p {
 .map {
   border-radius: 20px;
   box-shadow: var(--shadow);
+  width:100%;
+  height: 350px;
 }
 
 /* Funcionamento Section */
@@ -248,15 +255,15 @@ footer p {
   color: #dc3545;
 }
 
-#verification {
+#verification-box {
   border-radius: 15px;
   display: none;
   padding: 1.5vh 1vw;
   margin-bottom: 2vh;
-  background-color: var(--green);
+  background-color: #38664120;
 }
 
-#verification p {
+#verification-box p {
   color: var(--green);
   margin: auto 0;
 }
@@ -274,7 +281,6 @@ footer p {
 .footer-sections a {
   color: var(--gray);
   text-decoration: none;
-  margin: 5vh 0 0;
 }
 
 .copyright {
