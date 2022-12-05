@@ -317,7 +317,7 @@ footer p {
     justify-content: end;
   }
   .container-fluid {
-    padding: 0 10vw;
+    padding: 2vh 10vw 0;
   }
 
   #main {
@@ -327,16 +327,30 @@ footer p {
     background-size: cover;
     text-align: left;
   }
-
-  #main .container {
-    padding: 2vh 10vw 0;
-  }
-
+  
   .main-heading {
     font-size: 2.7rem;
   }
 
   .carousel-inner {
     height: 475px;
+  }
+}
+
+@media (min-width: 1400px){
+  .container-fluid {
+    padding: 2vh 20vw;
+  }
+
+  #main {
+    background: rgba(0, 0, 0, 0.3)
+      url(https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-blend-mode: darken;
+    background-size: cover;
+    text-align: left;
+  }
+
+  .main-heading {
+    font-size: 3.5rem;
   }
 }
