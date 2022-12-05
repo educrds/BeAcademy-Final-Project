@@ -2,7 +2,7 @@ import { inputs } from "../data/inputs.js";
 
 const myForm = document.getElementById("form");
 const phone = document.getElementById("phone");
-const verificationBox = document.getElementById("verification");
+const verificationBox = document.getElementById("verification-box");
 const submitButton = document.getElementById("button-submit");
 const themeButton = document.getElementById("theme-icon");
 
