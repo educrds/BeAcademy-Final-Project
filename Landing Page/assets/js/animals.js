@@ -3,21 +3,34 @@ const path = "assets/data/animals.json";
 
 fetch(path)
   .then((response) => response.json())
-  .then((data) => data.map(convertAnimalsToCard))
+  .then((data) => data.map(convertJsonToAnimalItem))
+  .then((list) => loadAnimalCards(list))
   .catch((err) => console.log(err));
 
-const convertAnimalsToCard = (animal) => {
-  const { name, type, habitat, photoUrl, description } = animal;
+function convertJsonToAnimalItem(animalDetail) {
+  const animal = new Animal();
 
-  const animalItem = `
+  animal.name = animalDetail.name;
+  animal.type = animalDetail.type;
+  animal.habitat = animalDetail.habitat;
+  animal.photo = animalDetail.photoUrl;
+  animal.description = animalDetail.description;
+
+  return animal;
+}
+
+function convertAnimalToCard(animal) {
+  const { name, type, habitat, photo, description } = animal;
+
+  return `
     <div class="col-6 col-md-3">
       <div class="card">
-        <img src="${photoUrl}" alt="imagem do animal ${name}"/>
+        <img src="${photo}" alt="imagem do animal ${name}"/>
           <div class="card-body">
             <h5 class="card-title">${name}</h5>
             <div>
-              <span class="badge">${type}</span>
-              <span class="badge">${habitat}</span>
+              <span class="badge ${type}">${type}</span>
+              <span class="badge ${habitat}">${habitat}</span>
               <a
                 role="btn"
                 data-bs-toggle="collapse"
@@ -35,9 +48,10 @@ const convertAnimalsToCard = (animal) => {
       </div>
     </div>
   `;
-  loadAnimals(animalItem, animalsHtmlList);
-};
+}
 
-const loadAnimals = (item, list) => {
-  list.innerHTML += item;
-};
+function loadAnimalCards(list) {
+  const newHtml = list.map(convertAnimalToCard).join("");
+  animalsHtmlList.innerHTML += newHtml;
+}
+
