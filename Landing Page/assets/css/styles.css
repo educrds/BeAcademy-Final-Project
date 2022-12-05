@@ -195,10 +195,26 @@ footer p {
 }
 
 .badge {
-  background-color: #9ec1a3;
+  text-transform: capitalize;
+  background-color: #e9f5db;
   border-radius: 20px;
   color: var(--green);
   font-size: 0.75rem;
+}
+
+.badge.marinho{
+  background-color: #8ecae6;
+  color: #023047;
+}
+
+.badge.terrestre{
+  background-color: #a98467;
+  color: #43291f;
+}
+
+.badge.ambos{
+  background-color: #f3f3f4;
+  color: #7e7f83;
 }
 
 .see-more {
