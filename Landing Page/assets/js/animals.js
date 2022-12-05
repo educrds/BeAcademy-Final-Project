@@ -20,6 +20,7 @@ function convertJsonToAnimalItem(animalDetail) {
 }
 
 function convertAnimalToCard(animal) {
+  
   const { name, type, habitat, photo, description } = animal;
 
   return `

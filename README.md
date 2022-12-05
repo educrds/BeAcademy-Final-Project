@@ -10,3 +10,8 @@ Então com esse obstáculo, ao invés de precisar reformular todo o projeto, dec
 
 ![](https://phx02pap001files.storage.live.com/y4m0uFp7kXadD5llm9_7RhNDGdvreRgNK4Ko0dJu9HJ8Psx5HMLTQEh3sKHiGqaBYstOYeqwUR2nyyCKiJnjzfSfL3aRBVd4-KXW8P9VGD38nyT3bcloPZnSEsnQPPXWpD-yyNiKX0MoGy83JzEYwqtSq64j0PR36orQ_Ax6iEHegmxcR17GXILIu89K1O3JK18buOhub-iRWLS3lBRe8x9gVu5nYhUeC9_OA-72gR1VQo?encodeFailures=1&width=1352&height=597)
 > Acredito que consegui entregar todos os requisitos necessários e foi bastante divertido desenvolver esse projeto, ainda mais com uma experiência nova, que é desenvolver utilizando uma metodologia de design, buscando melhorias, concisão e otimizações no código para se encaixar nos princípios **SOLID**.
+
+## Excel
+Na criação da planilha utilizei os dados fornecidos pelo **Ministério da Saúde** acerca da **Covid-19**, especificamente na alta de casos (Jan/2022 - Jul/2022).
+
+![](https://phx02pap001files.storage.live.com/y4mjTtKKAeSSsJ39Mtjkg0PvEFGY2yzrkyvk8P06yDA0WEnP0CKka3EVJGGhq8zt72mY7tAz4dbhSJ20wjQrEZeCfVVt-4DqJmAEjjiDqaQgPWycIFpY0vBjrNR7Kb6ecEf28wjTYryuhhhWNf6SrPXIlSO9l46puuUBpT1MbB5djEXHyzKF0AW_yPPVCSMMj5w1uat2faPeqxPzbwcjq01OEk9b-VpEIPe0Z5pPNSz1yc?encodeFailures=1&width=1278&height=597)
