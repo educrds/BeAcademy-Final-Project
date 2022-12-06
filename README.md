@@ -17,6 +17,8 @@ Na criação da planilha utilizei os dados fornecidos pelo **Ministério da Saú
 ![](https://phx02pap001files.storage.live.com/y4mjTtKKAeSSsJ39Mtjkg0PvEFGY2yzrkyvk8P06yDA0WEnP0CKka3EVJGGhq8zt72mY7tAz4dbhSJ20wjQrEZeCfVVt-4DqJmAEjjiDqaQgPWycIFpY0vBjrNR7Kb6ecEf28wjTYryuhhhWNf6SrPXIlSO9l46puuUBpT1MbB5djEXHyzKF0AW_yPPVCSMMj5w1uat2faPeqxPzbwcjq01OEk9b-VpEIPe0Z5pPNSz1yc?encodeFailures=1&width=1278&height=597)
 
 ## Banco de dados (mySQL)
+### Diagrama
+![](https://phx02pap001files.storage.live.com/y4mgw7fCo3i5aRmJGpyv533txW1nuaz3PP28PVT7Jjxrl4knvJsju1w2tOqdw3XGhqB3iphI2P_7IMN0L2ILB7ClQpvW1lbo69kD98dFKxPhBmAi3lK5XKEg4WD9cZhcoY1skHSxJ6gjiejr2vRYpSvuQVXlEAmJODg_WgY9pPqD3EIEwikbUYHQ0esAkgavlQWeSp5XtsAFCufsGjBCTo3Fleiyp2IutnUInYfFxuYG0A?encodeFailures=1&width=1464&height=489)
 ### Create *users* table
 ```sql
 CREATE TABLE `users` (
