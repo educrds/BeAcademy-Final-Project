@@ -15,3 +15,43 @@ Então com esse obstáculo, ao invés de precisar reformular todo o projeto, dec
 Na criação da planilha utilizei os dados fornecidos pelo **Ministério da Saúde** acerca da **Covid-19**, especificamente na alta de casos (Jan/2022 - Jul/2022).
 
 ![](https://phx02pap001files.storage.live.com/y4mjTtKKAeSSsJ39Mtjkg0PvEFGY2yzrkyvk8P06yDA0WEnP0CKka3EVJGGhq8zt72mY7tAz4dbhSJ20wjQrEZeCfVVt-4DqJmAEjjiDqaQgPWycIFpY0vBjrNR7Kb6ecEf28wjTYryuhhhWNf6SrPXIlSO9l46puuUBpT1MbB5djEXHyzKF0AW_yPPVCSMMj5w1uat2faPeqxPzbwcjq01OEk9b-VpEIPe0Z5pPNSz1yc?encodeFailures=1&width=1278&height=597)
+
+## Banco de dados (mySQL)
+### Create *users* table
+```sql
+CREATE TABLE `users` (
+  `id` INT NOT NULL,
+  `username` VARCHAR(55) NOT NULL,
+  `email` VARCHAR(55) NOT NULL,
+  `country` VARCHAR(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+```
+### Create *posts* table
+```sql
+CREATE TABLE `posts` (
+  `post_id` INT NOT NULL,
+  `content` VARCHAR(255) NOT NULL,
+  `created_in` TIMESTAMP NOT NULL,
+  `user_id` INT DEFAULT NULL,
+  PRIMARY KEY (`post_id`),
+  KEY `user_id_idx` (`user_id`),
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+);
+
+```
+### Create *comments* table
+```sql
+CREATE TABLE `comments` (
+  `comment_id` INT NOT NULL,
+  `comment` VARCHAR (255) NOT NULL,
+  `created_in` TIMESTAMP NOT NULL,
+  `user_id` INT DEFAULT NULL,
+  `post_id` INT NOT NULL,
+  PRIMARY KEY (`comment_id`),
+  KEY `post_id_idx` (`post_id`),
+  KEY `user_id_idx` (`user_id`),
+  CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `posts` (`post_id`),
+  CONSTRAINT `uid` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+);
+```
