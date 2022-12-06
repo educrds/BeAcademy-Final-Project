@@ -1,16 +1,18 @@
 import { inputs } from "../data/inputs.js";
 
-const myForm = document.getElementById("form");
-const phone = document.getElementById("phone");
 const verificationBox = document.getElementById("verification-box");
 const submitButton = document.getElementById("button-submit");
 const themeButton = document.getElementById("theme-icon");
+const myForm = document.getElementById("form");
+const phone = document.getElementById("phone");
 
 submitButton.addEventListener("click", handleSubmit);
+themeButton.addEventListener("click", themeMode);
 phone.addEventListener("keypress", maskPhoneInput);
-themeButton.addEventListener("click", () =>
-  document.documentElement.classList.toggle("dark-mode")
-);
+
+function themeMode() {
+  document.documentElement.classList.toggle("dark-mode");
+}
 
 function maskPhoneInput(event) {
   const phoneNumber = event.target.value.replace(/[^\d]/g, "");
@@ -32,8 +34,10 @@ function validateInputs() {
     const patternMatch = pattern.test(inputValue.value);
 
     try {
-      if (!inputValue.value) throw (errorMessage.innerHTML = "Campo obrigatório");
-      else if (!patternMatch) throw (errorMessage.innerHTML = "Formato inválido");
+      if (!inputValue.value) 
+        throw (errorMessage.innerHTML = "Campo obrigatório");
+      else if (!patternMatch) 
+        throw (errorMessage.innerHTML = "Formato inválido");
       else {
         input.isValid = true;
         errorMessage.innerHTML = "";

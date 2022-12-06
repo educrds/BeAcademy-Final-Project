@@ -3,13 +3,13 @@ const path = "assets/data/animals.json";
 
 fetch(path)
   .then((response) => response.json())
-  .then((data) => data.map(convertJsonToAnimalItem))
+  .then((data) => data.map(convertJsonToClassItem))
   .then((list) => loadAnimalCards(list))
   .catch((err) => console.log(err));
 
-function convertJsonToAnimalItem(animalDetail) {
+function convertJsonToClassItem(animalDetail) {
   const animal = new Animal();
-
+  
   animal.name = animalDetail.name;
   animal.type = animalDetail.type;
   animal.habitat = animalDetail.habitat;
