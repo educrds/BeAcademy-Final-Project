@@ -3,30 +3,17 @@ const path = "assets/data/animals.json";
 
 fetch(path)
   .then((response) => response.json())
-  .then((data) => data.map(convertJsonToClassItem))
-  .then((list) => loadAnimalCards(list))
+  .then((data) => loadAnimalCards(data))
   .catch((err) => console.log(err));
-
-function convertJsonToClassItem(animalDetail) {
-  const animal = new Animal();
-  
-  animal.name = animalDetail.name;
-  animal.type = animalDetail.type;
-  animal.habitat = animalDetail.habitat;
-  animal.photo = animalDetail.photoUrl;
-  animal.description = animalDetail.description;
-
-  return animal;
-}
 
 function convertAnimalToCard(animal) {
   
-  const { name, type, habitat, photo, description } = animal;
+  const { name, type, habitat, photoUrl, description } = animal;
 
   return `
     <div class="col-6 col-md-3">
       <div class="card">
-        <img src="${photo}" alt="imagem do animal ${name}"/>
+        <img src="${photoUrl}" alt="imagem do animal ${name}"/>
           <div class="card-body">
             <h5 class="card-title">${name}</h5>
             <div>
@@ -52,7 +39,7 @@ function convertAnimalToCard(animal) {
 }
 
 function loadAnimalCards(list) {
-  const newHtml = list.map(convertAnimalToCard).join("");
-  animalsHtmlList.innerHTML += newHtml;
+  const newCard = list.map(convertAnimalToCard).join("");
+  animalsHtmlList.innerHTML += newCard;
 }
 
