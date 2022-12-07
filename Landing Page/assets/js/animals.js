@@ -1,15 +1,12 @@
-const animalsHtmlList = document.getElementById("animals-list");
-const path = "assets/data/animals.json";
+const animalsHtmlList = document.getElementById('animals-list');
+const path = 'assets/data/animals.json';
 
 fetch(path)
   .then((response) => response.json())
   .then((data) => loadAnimalCards(data))
   .catch((err) => console.log(err));
 
-function convertAnimalToCard(animal) {
-  
-  const { name, type, habitat, photoUrl, description } = animal;
-
+function convertAnimalToCard({ name, type, habitat, photoUrl, description }) {
   return `
     <div class="col-6 col-md-3">
       <div class="card">
@@ -39,7 +36,6 @@ function convertAnimalToCard(animal) {
 }
 
 function loadAnimalCards(list) {
-  const newCard = list.map(convertAnimalToCard).join("");
+  const newCard = list.map(convertAnimalToCard).join('');
   animalsHtmlList.innerHTML += newCard;
 }
-

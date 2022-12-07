@@ -1,15 +1,15 @@
-import { inputs } from "../data/inputs.js";
+import { inputs } from '../data/inputs.js';
 
-const verificationBox = document.getElementById("verification-box");
-const submitButton = document.getElementById("button-submit");
-const themeButton = document.getElementById("theme-icon");
-const myForm = document.getElementById("form");
-const phoneInput = document.getElementById("phone");
+const verificationBox = document.getElementById('verification-box');
+const submitButton = document.getElementById('button-submit');
+const themeButton = document.getElementById('theme-icon');
+const myForm = document.getElementById('form');
+const phoneInput = document.getElementById('phone');
 
-submitButton.addEventListener("click", handleSubmit);
-themeButton.addEventListener("click", toggleThemeMode);
-phoneInput.addEventListener("keypress", (e) =>
-  maskInput("(##)#####-####", "#", e.target)
+submitButton.addEventListener('click', handleSubmit);
+themeButton.addEventListener('click', toggleThemeMode);
+phoneInput.addEventListener('keypress', (e) =>
+  maskInput('(##)#####-####', '#', e.target)
 );
 
 function handleSubmit(event) {
@@ -18,12 +18,12 @@ function handleSubmit(event) {
 }
 
 function toggleThemeMode() {
-  document.documentElement.classList.toggle("dark-mode");
+  document.documentElement.classList.toggle('dark-mode');
 }
 
 function maskInput(pattern, charFormat, element) {
-  let inputLength = element.value.length;
-  let restText = pattern.substring(inputLength);
+  const inputLength = element.value.length;
+  const restText = pattern.substring(inputLength);
 
   restText.substring(0, 1) != charFormat
     ? (element.value += restText.substring(0, 1))
@@ -39,11 +39,11 @@ function validateInputs() {
     const patternMatch = pattern.test(inputValue.value);
 
     try {
-      if (!inputValue.value) throw (errorMessage.innerHTML = "Campo obrigatório");
-      else if (!patternMatch) throw (errorMessage.innerHTML = "Formato inválido");
+      if (!inputValue.value) throw (errorMessage.innerHTML = 'Campo obrigatório');
+      else if (!patternMatch) throw (errorMessage.innerHTML = 'Formato inválido');
       else {
         input.isValid = true;
-        errorMessage.innerHTML = "";
+        errorMessage.innerHTML = '';
       }
     } catch (error) {
       error;
@@ -55,7 +55,7 @@ function validateInputs() {
 function allInputsValid(inputs, form, verifiedMessage) {
   inputs.every((inputField) => inputField.isValid)
     ? setTimeout(() => {
-        verifiedMessage.style.display = "inherit";
+        verifiedMessage.style.display = 'inherit';
         form.reset();
       }, 1000)
     : null;
