@@ -1,21 +1,22 @@
 .dark-mode:root {
   --primary-color: #212836;
   --secondary-color: #cfd4d91a;
-  --green: #6a994e;
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
+  --icon-theme: "\f185";
+  --green: #6a994e;
   --shadow: none;
-  --icon-mode: "\f185";
 }
+
 :root {
   --primary-color: #e5e5e5;
   --secondary-color: #f8f9fa;
-  --green: #386641;
   --white: #fcfcfc;
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
+  --green: #386641;
+  --icon-theme: "\f186";
   --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  --icon-mode: "\f186";
 }
 
 * {
@@ -117,11 +118,10 @@ footer p {
 
 #theme-icon {
   align-self: center;
-  border-radius: 15px;
-  font-size: 1.175rem;
-  color: var(--gray);
   border: 2px solid var(--gray);
-  border-radius: 30px;
+  border-radius: 15px;
+  color: var(--gray);
+  font-size: 1.175rem;
 }
 
 #theme-icon:hover {
@@ -132,7 +132,7 @@ footer p {
 
 #theme-icon:before {
   font-family: fontAwesome;
-  content: var(--icon-mode);
+  content: var(--icon-theme);
 }
 
 /* Main Section */
@@ -144,8 +144,8 @@ footer p {
   background-size: 100vw;
   color: var(--white);
   min-height: 524px;
-  text-align: center;
   padding: 3vh 0;
+  text-align: center;
 }
 
 .btn-animals {
@@ -261,9 +261,15 @@ footer p {
   color: var(--green);
 }
 .btn-submit {
+  color: var(--gray);
   background-color: var(--green);
   border: none;
   width: 150px;
+}
+
+.btn-submit:hover{
+  color: var(--gray);
+  opacity: 0.9;
 }
 
 .error-message {
@@ -301,13 +307,13 @@ footer p {
 
 .copyright {
   opacity: 0.7;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .social-icon {
   font-size: 1.3rem;
   color: var(--gray);
-  margin: 3vh 4vw 0;
+  margin: 4vh 4vw 0;
 }
 
 /* Sizes */
