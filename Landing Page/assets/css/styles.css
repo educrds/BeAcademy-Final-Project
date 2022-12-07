@@ -237,15 +237,16 @@ footer p {
 .table {
   background-color: var(--secondary-color);
   color: var(--dark-gray);
-  border: 1px solid var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 30px;
   box-shadow: var(--shadow);
 }
 .table th {
-  background-color: var(--green);
-  color: var(--gray);
+  color: var(--green);
+  text-align: center;
 }
 
-.table td:nth-child(2) {
+.table td {
   vertical-align: middle;
   text-align: center;
 }
@@ -255,11 +256,18 @@ footer p {
 .form-control {
   background: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+  color: var(--dark-gray);
 }
 
 .form-label {
   color: var(--green);
 }
+
+.form-check-input:checked{
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
 .btn-submit {
   color: var(--gray);
   background-color: var(--green);
