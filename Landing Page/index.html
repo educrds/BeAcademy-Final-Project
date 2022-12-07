@@ -53,10 +53,10 @@
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
           >
-            <span class="fa-solid fa-bars toggler-icon"></span>
+            <span class="fa-solid fa-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#animais">Animais</a>
               </li>
@@ -170,7 +170,9 @@
       <div class="container-fluid">
         <h4>Animais</h4>
         <p>Veja os animais disponíveis em nosso Zoológico.</p>
-        <div class="row" id="animals-list"></div>
+        <div class="row" id="animals-list">
+          <!-- Animals list Here -->
+        </div>
       </div>
     </section>
 
@@ -181,8 +183,8 @@
         <h4>Localização</h4>
         <p>Veja como chegar em nosso zoológico.</p>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14618.804467820028!2d-46.6204495!3d-23.6508725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7f1ba1b449ce36a!2sZool%C3%B3gico%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1669931324811!5m2!1spt-BR!2sbr"
           class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14618.804467820028!2d-46.6204495!3d-23.6508725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7f1ba1b449ce36a!2sZool%C3%B3gico%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1669931324811!5m2!1spt-BR!2sbr"
         ></iframe>
       </div>
     </section>
@@ -303,7 +305,8 @@
                 type="tel"
                 class="form-control"
                 id="phone"
-                placeholder="ex: (34) 98722-9090"
+                placeholder="ex: (34)98722-9090"
+                maxlength="14"
               />
               <p class="error-message"></p>
             </div>
@@ -319,11 +322,7 @@
               Aceito receber notificações sobre novidades de eventos do BeZoo.
             </p>
           </div>
-          <button
-            type="submit"
-            id="button-submit"
-            class="btn btn-primary btn-submit"
-          >
+          <button type="submit" id="button-submit" class="btn btn-submit">
             Enviar
           </button>
         </form>
@@ -346,9 +345,10 @@
             <a href="#agendamento">Agendamento</a>
           </div>
           <div>
-            <i class="social-icon fab fa-facebook-f"></i>
-            <i class="social-icon fab fa-instagram"></i>
-            <i class="social-icon fas fa-envelope"></i>
+            <i class="fa-brands fa-twitter social-icon"></i>
+            <i class="fa-brands fa-facebook social-icon"></i>
+            <i class="fa-brands fa-instagram social-icon"></i>
+            <i class="fa-solid fa-envelope social-icon"></i>
           </div>
         </div>
         <p class="copyright">
@@ -358,8 +358,7 @@
       </div>
     </footer>
   </body>
-  <script src="./assets/js/animalModel.js"></script>
-  <script type="module" src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js" type="module"></script>
   <script src="./assets/js/animals.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
