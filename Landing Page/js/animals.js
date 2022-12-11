@@ -30,10 +30,9 @@ const convertAnimalToCard = ({ name, type, habitat, photoUrl, description }) => 
                 href="#${name}"
                 aria-controls="${name}"
                 role="button"
-                aria-expanded="false"
                 ><i class="fa-solid fa-caret-down see-more"></i
               ></a>
-              <div class="collapse multi-collapse card-text" id="${name}">
+              <div class="collapse card-text" id="${name}">
                 <div>${description}</div>
               </div>
             </div>
