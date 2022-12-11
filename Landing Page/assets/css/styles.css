@@ -3,7 +3,7 @@
   --secondary-color: #cfd4d91a;
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
-  --icon-theme: "\f185";
+  --icon-theme: '\f185';
   --green: #6a994e;
   --shadow: none;
 }
@@ -15,7 +15,7 @@
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
   --green: #386641;
-  --icon-theme: "\f186";
+  --icon-theme: '\f186';
   --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
 }
 
@@ -100,12 +100,6 @@ footer p {
   padding: 0 0 4.5rem;
 }
 
-.navbar-brand {
-  line-height: 1;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .nav-item {
   padding: 0 15px;
 }
@@ -164,7 +158,7 @@ footer p {
   box-shadow: var(--shadow);
 }
 
-.carousel-photos{
+.carousel-photos {
   display: block;
   width: 100%;
 }
@@ -192,6 +186,7 @@ footer p {
   border-radius: 20px 20px 0 0;
   height: 165px;
   width: 100%;
+  object-fit: cover;
 }
 
 .badge {
@@ -202,17 +197,17 @@ footer p {
   font-size: 0.75rem;
 }
 
-.badge.marinho{
+.badge.marinho {
   background-color: #8ecae6;
   color: #023047;
 }
 
-.badge.terrestre{
+.badge.terrestre {
   background-color: #a98467;
   color: #43291f;
 }
 
-.badge.ambos{
+.badge.ambos {
   background-color: #f3f3f4;
   color: #7e7f83;
 }
@@ -228,7 +223,7 @@ footer p {
 .map {
   border-radius: 20px;
   box-shadow: var(--shadow);
-  width:100%;
+  width: 100%;
   height: 350px;
 }
 
@@ -263,7 +258,7 @@ footer p {
   color: var(--green);
 }
 
-.form-check-input:checked{
+.form-check-input:checked {
   background-color: var(--green);
   border-color: var(--green);
 }
@@ -275,12 +270,13 @@ footer p {
   width: 150px;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
   color: var(--gray);
   opacity: 0.9;
 }
 
 .error-message {
+  margin-top: 0.5vh;
   font-size: 0.85rem;
   color: #dc3545;
 }
@@ -341,7 +337,7 @@ footer p {
     background-size: cover;
     text-align: left;
   }
-  
+
   .main-heading {
     font-size: 2.7rem;
   }
@@ -351,7 +347,7 @@ footer p {
   }
 }
 
-@media (min-width: 1400px){
+@media (min-width: 1400px) {
   .container-fluid {
     padding: 2vh 20vw;
   }
