@@ -1,26 +1,26 @@
 const inputs = [
   {
-    name: "first-name",
+    id: "first-name",
     pattern: /\b([A-Za-z][a-z]+[ ]*)/,
     isValid: false,
   },
   {
-    name: "last-name",
+    id: "last-name",
     pattern: /\b([A-Za-z][a-z]+[ ]*)/,
     isValid: false,
   },
   {
-    name: "email",
+    id: "email",
     pattern: /\S+@\S+\.\S+/,
     isValid: false,
   },
   {
-    name: "phone",
+    id: "phone",
     pattern: /\(\d{2}\)\d{5}-\d{4}/,
     isValid: false,
   },
   {
-    name: "date",
+    id: "date",
     pattern: /^[0-9]{4}\-[0-9]{2}\-[0-9]{2}/,
     isValid: false,
   },
