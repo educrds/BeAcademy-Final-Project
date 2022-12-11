@@ -10,7 +10,7 @@ submitButton.addEventListener('click', handleSubmit);
 themeButton.addEventListener('click', toggleThemeMode);
 phoneInput.addEventListener('keypress', (e) => maskInput('(##)#####-####', '#', e.target));
 
-//handling the submit button and calling a validadeInputs() 
+//handling the submit button and calling a validadeInputs()
 function handleSubmit(event) {
   event.preventDefault();
   validateInputs();
@@ -37,12 +37,12 @@ function validateInputs() {
 
     const element = document.getElementById(id);
     const errorMessage = element.parentElement.querySelector(`.error-message`);
-    const errorIcon = '<i class="fa-solid fa-circle-exclamation"></i>'
+    const errorIcon = '<i class="fa-solid fa-circle-exclamation"></i>';
     const patternMatch = pattern.test(element.value);
 
     try {
-      if (!element.value) throw (errorMessage.innerHTML = `${errorIcon} Campo obrigatório`);
-      else if (!patternMatch) throw (errorMessage.innerHTML = `${errorIcon} Formato inválido`);
+      if (!element.value) errorMessage.innerHTML = `${errorIcon} Campo obrigatório`;
+      else if (!patternMatch) errorMessage.innerHTML = `${errorIcon} Formato inválido`;
       else {
         input.isValid = true;
         errorMessage.innerHTML = '';
