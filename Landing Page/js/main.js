@@ -41,8 +41,8 @@ function validateInputs() {
     const patternMatch = pattern.test(element.value);
 
     try {
-      if (!element.value) errorMessage.innerHTML = `${errorIcon} Campo obrigatório`;
-      else if (!patternMatch) errorMessage.innerHTML = `${errorIcon} Formato inválido`;
+      if (!element.value) throw errorMessage.innerHTML = `${errorIcon} Campo obrigatório`;
+      else if (!patternMatch) throw errorMessage.innerHTML = `${errorIcon} Formato inválido`;
       else {
         input.isValid = true;
         errorMessage.innerHTML = '';
