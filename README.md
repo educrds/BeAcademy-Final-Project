@@ -15,7 +15,7 @@ Na criação da planilha utilizei os dados fornecidos pelo **Ministério da Saú
 
 ## Banco de dados (mySQL)
 ### Diagrama
-![](https://phx02pap001files.storage.live.com/y4my2FUp6f4y_F76AmUEYmYB7wzVMM6oPNrMdlYxMiOQ3KisWpvdsYR3bIpbHBfGGejRE8_oE54Y8YdWFrMFDtRvD5raXejke2WdHhxzi73u4vD2TT4jqZJP5lWbhRC7AEB6oiBABQj4v0zPfIAkJlNYXuhdA38xangFm_S7oCJDU7TT9GjUgIZncA8SmM3JlpRJZHwsBIm25riRKaOqGrHpdCc-T8PSZdDd7cJnwbb0pg?encodeFailures=1&width=220&height=133)
+![](https://phx02pap001files.storage.live.com/y4my2FUp6f4y_F76AmUEYmYB7wzVMM6oPNrMdlYxMiOQ3KisWpvdsYR3bIpbHBfGGejRE8_oE54Y8YdWFrMFDtRvD5raXejke2WdHhxzi73u4vD2TT4jqZJP5lWbhRC7AEB6oiBABQj4v0zPfIAkJlNYXuhdA38xangFm_S7oCJDU7TT9GjUgIZncA8SmM3JlpRJZHwsBIm25riRKaOqGrHpdCc-T8PSZdDd7cJnwbb0pg?encodeFailures=1&width=880&height=389)
 
 ### Criando banco de dados *db_zero_to_hero*
 ```sql
