@@ -3,8 +3,8 @@
   --secondary-color: #cfd4d91a;
   --gray: #d5d5d5;
   --dark-gray: #8f8f8f;
-  --icon-theme: '\f185';
   --green: #6a994e;
+  --icon-theme: '\f185';
   --shadow: none;
 }
 
@@ -351,7 +351,7 @@ footer p {
 
 @media (min-width: 1400px) {
   .container-fluid {
-    padding: 2vh 20vw;
+    padding: 2vh 15vw;
   }
 
   #main {

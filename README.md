@@ -5,17 +5,17 @@
 Escolhi como tema de minha landing page um conceito de uma página de zoológico cujo nome é**beZoo**.
 Utilizei o framework **Bootstrap** para uma melhor estilização e otimização de tempo na construção do *front-end*. 
 
-![](https://phx02pap001files.storage.live.com/y4mSWE_0mK8q2vtc2vhYeFkP-o74qU8hlxgFMY91oFi-NxtOpREnHDQSctxYDS7Dda2zEFwKy7YSLUelvNLJcD8-3_WHzTwMFac9kfXvgxr6E33chzNtfJNC4PED1rxhhJPHkGCzAhlAdAoxGddw_crF_6tgcbJRv0vq0B0x_oaGgN1W46xFI77gmK97T_erPH0MLwHgv6eSZuiFYL6a5eWZc2FuGlNpSLWRMuUgBChJ20?encodeFailures=1&width=1352&height=597)
+![](https://phx02pap001files.storage.live.com/y4mHw8XASJXKE8UlTOCK9gHqd59rwEZlv2XnEzm2uThztBoFg4MhVt4QEXiK9PCfvHh-WtLnUXXXtoCwrpJsVy471lYCoNJk_ABTuYdBMRAk18hf78KhQ06nnA09B0y1hQVOrIogvaIM1gyv-JjVsv5l8cDPcFRzIDbKqSrycVjNSS1dn5qhQmQi2ytVsGCVtYw20taKQw8jd2tHrzKS_-kMUoJrQYyNuJxkWd4VCzHBHE?encodeFailures=1&width=881&height=389)
 > Acredito que consegui entregar todos os requisitos necessários e foi bastante divertido desenvolver esse projeto, ainda mais com uma experiência nova, que é desenvolver utilizando uma metodologia de design, buscando melhorias, concisão e otimizações no código para se encaixar nos princípios **SOLID**.
 
 ## Excel
 Na criação da planilha utilizei os dados fornecidos pelo **Ministério da Saúde** acerca da **Covid-19**, especificamente na alta de casos (Jan/2022 - Jul/2022).
 
-![enter image description here](https://phx02pap001files.storage.live.com/y4mTRSDRLwvmIomEAw63GWvEIQnpfSMUPtpj_a3hWhBgg40laRljJVMqV9i7NpaizLlSXenxZ6mrSTWm4IOtRv_Ejax90j3rD1vo4S01p-xBQjB_A3coKVyZU3NbCGRWY0IHMtnzZNH0QV9pvmXM2n57rZcJpnIe0D5QCcPvPrgT72Ho_SA4pR6Bf-Ub657-mfeFFuCMAI9eZoNdH9_eEVIe591tFjUQY6Bbv4JQQ38suY?encodeFailures=1&width=1456&height=795)
+![](https://phx02pap001files.storage.live.com/y4mE7fim1hnYS9G4lGvXX0QeKfUutv1qYN6nJJ8aEGO37fcp02a-Avndlc6w5hloShi69AM73M-Qpyh3dZ3cCRPyQjzkcNL7DySCXIS5XS1aV4ruNmkwTP6dAtMlNE6t1vsY0zyW_PVGbLcryBtrTJHEfOYnNM6YTSsx7ClEI4i_WGb3jMSGUWOltMhwluhVlkhORx1fgmIi9zQHwe8QEm6z6-nMheKcL_q517sbkqIORs?encodeFailures=1&width=881&height=481)
 
 ## Banco de dados (mySQL)
 ### Diagrama
-![](https://phx02pap001files.storage.live.com/y4mxxsPPXvIFRgkvQSfRYzw4PLV3rbcG6hgunOVFf60UOyhiDutVgsdrwmTIEJPc-wtPWnK1aGrqKftQ2WyVhReycurtbkrgQxKaHOy1ZxfGmJRPJdVXoBRzF4iA4oK2MnwNhtyvSOLBkXb6y8sno527CgDbHmoep3fSWO7SyS2mnyiZLvpMsrZ0GXSd4xssXWo9IQpUR-ELbYJi5cTbpV-WcNBkcRGGgt57TjlNgPAM1g?encodeFailures=1&width=1468&height=891)
+![](https://phx02pap001files.storage.live.com/y4my2FUp6f4y_F76AmUEYmYB7wzVMM6oPNrMdlYxMiOQ3KisWpvdsYR3bIpbHBfGGejRE8_oE54Y8YdWFrMFDtRvD5raXejke2WdHhxzi73u4vD2TT4jqZJP5lWbhRC7AEB6oiBABQj4v0zPfIAkJlNYXuhdA38xangFm_S7oCJDU7TT9GjUgIZncA8SmM3JlpRJZHwsBIm25riRKaOqGrHpdCc-T8PSZdDd7cJnwbb0pg?encodeFailures=1&width=220&height=133)
 
 ### Criando banco de dados *db_zero_to_hero*
 ```sql

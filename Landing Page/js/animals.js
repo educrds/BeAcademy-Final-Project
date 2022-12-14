@@ -10,13 +10,13 @@ fetch(apiURL)
 // adding each API item into a variable and rendering it in page
 const loadAnimalCards = (list) => {
   const newCard = list.map(convertAnimalToCard).join('');
-  animalsList.innerHTML += newCard;
+  animalsList.innerHTML = newCard;
 };
 
 // convert datas from API to HTML element
 const convertAnimalToCard = ({ name, type, habitat, photoUrl, description }) => {
   return `
-    <div class="col-6 col-md-3">
+    <div class="col-6 col-md-4 col-lg-3">
       <div class="card">
         <img src="${photoUrl}" alt="imagem do animal ${name}"/>
           <div class="card-body">
