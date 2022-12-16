@@ -2,8 +2,8 @@
 # Projeto final - beAcademy
 
 ## Landing page
-Escolhi como tema de minha landing page um conceito de uma página de zoológico cujo nome é**beZoo**.
-Utilizei o framework **Bootstrap** para uma melhor estilização e otimização de tempo na construção do *front-end*. 
+Escolhi como tema de minha landing page um conceito de uma página de zoológico cujo nome é **[beZoo](https://educrds.github.io/BeAcademy-Final-Project/)**.
+Utilizei o framework **Bootstrap** para uma melhor estilização e otimização de tempo na construção do *front-end* e focar realmente na codificação das funcionalidades principais. 
 
 ![](https://phx02pap001files.storage.live.com/y4mHw8XASJXKE8UlTOCK9gHqd59rwEZlv2XnEzm2uThztBoFg4MhVt4QEXiK9PCfvHh-WtLnUXXXtoCwrpJsVy471lYCoNJk_ABTuYdBMRAk18hf78KhQ06nnA09B0y1hQVOrIogvaIM1gyv-JjVsv5l8cDPcFRzIDbKqSrycVjNSS1dn5qhQmQi2ytVsGCVtYw20taKQw8jd2tHrzKS_-kMUoJrQYyNuJxkWd4VCzHBHE?encodeFailures=1&width=881&height=389)
 > Acredito que consegui entregar todos os requisitos necessários e foi bastante divertido desenvolver esse projeto, ainda mais com uma experiência nova, que é desenvolver utilizando uma metodologia de design, buscando melhorias, concisão e otimizações no código para se encaixar nos princípios **SOLID**.
